@@ -1,2 +1,8 @@
 composer require laravel/ui
 php artisan ui:auth
+Ajouter le role
+il faut creer un middleware specialement pour gerer l'authentification
+    php artisan make:middleware AdminMiddleware
+    make:middleware nom
+    Aller dans LoginController creer un fonction Authenticate pour les redirections
+    Aller dans Middleware et ajouter:'isAdmin' => \App\Http\Middleware\AdminMiddleware::class,
