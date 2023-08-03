@@ -52,7 +52,7 @@
                             <h4>Tags SEO</h4>
                         </div>
                         <div class="col-md-12 mb-3">
-                            <label for="meta_title" class="form-label">Meta title</label>
+                            <label for="meta_title" class="form-label">Titre meta</label>
                             <input type="text" name="meta_title" class="form-control" id="meta_title"
                                 placeholder="Titre meta" />
                                 @error('meta_title')
@@ -60,7 +60,7 @@
                                 @enderror
                         </div>
                         <div class="col-md-12 mb-3">
-                            <label for="meta_keyword" class="form-label">Meta keyword</label>
+                            <label for="meta_keyword" class="form-label">Titre meta</label>
                             <textarea class="form-control" name="meta_keyword" id="meta_keyword"
                                 placeholder="Mot cle meta" rows="3"></textarea>
                                 @error('meta_keyword')
@@ -68,7 +68,7 @@
                                 @enderror
                         </div>
                         <div class="col-md-12 mb-3">
-                            <label for="meta_description" class="form-label">Meta description</label>
+                            <label for="meta_description" class="form-label">Description meta</label>
                             <textarea class="form-control" name="meta_description" id="meta_description" rows="3"
                                 placeholder="Desccription meta"></textarea>
                                 @error('meta_description')
