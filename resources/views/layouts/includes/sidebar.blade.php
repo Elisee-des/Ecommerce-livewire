@@ -10,7 +10,7 @@
             <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false"
                 aria-controls="ui-basic">
                 <i class="mdi mdi-circle-outline menu-icon"></i>
-                <span class="menu-title">UI Elements</span>
+                <span class="menu-title">Products</span>
                 <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="ui-basic">
@@ -28,9 +28,9 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="pages/charts/chartjs.html">
+            <a class="nav-link" href="{{ route("brands.index") }}">
                 <i class="mdi mdi-chart-pie menu-icon"></i>
-                <span class="menu-title">Charts</span>
+                <span class="menu-title">Brands</span>
             </a>
         </li>
         <li class="nav-item">
@@ -47,8 +47,8 @@
         </li>
         <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-                <i class="mdi mdi-account menu-icon"></i>
-                <span class="menu-title">User Pages</span>
+                <i class="mdi mdi-account-multiple-plus"></i>
+                <span class="menu-title">Users</span>
                 <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="auth">

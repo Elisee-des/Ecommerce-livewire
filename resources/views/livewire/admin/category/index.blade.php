@@ -13,7 +13,7 @@
                 <h6>Etes vous sure de vouloir supprimer ?</h6>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
                 <button type="submit" class="btn btn-danger">Oui. Supprimer</button>
               </div>
         </form>
@@ -54,7 +54,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($categories as $category)
+                            @forelse ($categories as $category)
                             <tr>
                                 <td>
                                     {{ $category->id }}
@@ -71,7 +71,11 @@
                                     <a href="#" wire:click="deleteCategory({{ $category->id }})" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">Supprimer</a>
                                 </td>
                             </tr>
-                            @endforeach
+                            @empty
+                                <tr>
+                                    <td colspan="5">Aucune de categorie trouvée</td>
+                                </tr>
+                            @endforelse
                         </tbody>
                     </table>
                     <div class="justify-content-center">
