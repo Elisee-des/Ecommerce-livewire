@@ -84,6 +84,7 @@
           $('#addBrandModal').modal('hide');
           $('#updateBrandModal').modal('hide');
           $('#deleteBrandModal').modal('hide');
+          
       });
 </script>
 @endpush
